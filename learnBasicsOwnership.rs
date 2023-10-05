@@ -1,8 +1,6 @@
 fn main() {
-    // Create an empty vector to store student names
+    // Create an empty vector and store student names
     let mut student_names: Vec<String> = Vec::new();
-
-    // Add some student names to the vector
     let name1 = String::from("Alice");
     let name2 = String::from("Bob");
 
@@ -10,7 +8,7 @@ fn main() {
     student_names.push(name2);
 
     // Attempt to access name1 after it has been moved
-    // Uncommenting the following line would result in a compilation error:
+    // Uncommenting the following line should result in a compilation error:
     // println!("Name1: {}", name1);
 
     // Access and print student names from the vector
@@ -23,6 +21,6 @@ fn main() {
     student_names.push(third_name);
 
     // Attempt to access third_name after it has been moved
-    // Uncommenting the following line would result in a compilation error:
+    // Uncommenting the following line should result in a compilation error:
     // println!("Third Name: {}", third_name);
 }
